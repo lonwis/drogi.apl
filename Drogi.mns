@@ -1,0 +1,33 @@
+//
+//      AutoCAD plik menu - D:\Zdzich Plotek\DROGI.APL\DROGI.mnc
+//
+
+***MENUGROUP=drogi_lonia
+
+***POP1
+               [&Drogi]
+ID_lonia1      [wpisywanie rzednych niwelety RZ]^C^C(if (equal droga_pocz nil) (load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz) ) rz p 
+ID_lonia14     [punkt niwelety]^C^C(if (equal droga_pocz nil) (load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz) ) rz_punkt 
+ID_lonia13     [luki nivelety]^C^C(if (equal droga_pocz nil) (load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz) ) nluki 
+               [--]
+ID_lonia11     [spadek: 2 punkty]^C^C(if (equal droga_pocz nil) (load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz) ) spadek_punkty 
+ID_lonia12     [spadek: odcinek]^C^C(if (equal droga_pocz nil) (load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz) ) spadek_linii 
+               [--]
+ID_lonia2      [wpisywanie rzednych przekroju poprz RZ]^C^C(if (equal droga_pocz nil)(load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz)) rz_p 
+ID_lonia5      [wstaw blok PROFIL poprzeczny]^C^C(if (equal droga_pocz nil)(load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz)) wstaw_profil 
+ID_lonia9      [pomiary przekroju poprzecznego]^C^C(if (equal droga_pocz nil)(load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz)) przekroj_bp 
+ID_lonia7      [pole obiektow]^C^C(if (equal droga_pocz nil)(load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz)) lo_pole 
+ID_lonia8      [dlug obiektow]^C^C(if (equal droga_pocz nil)(load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz)) lo_dlugosc 
+               [--]
+ID_lonia3      [inicjlizacja PP i wys i skal]^C^C(if (equal droga_pocz nil)  (load "drogi.lsp")) (droga_pocz) 
+ID_lonia31     [podaj PP]^C^C(if (equal droga_pocz nil)  (load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz) ) !punkt_bazowy !wys_pp !x_pp !skala_poziom !skala_pion 
+ID_lonia32     [przenies LUW do  PP]^C^C(if (equal droga_pocz nil)  (load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz) ) (command "_ucs" "_o" punkt_bazowy ) 
+               [--]
+ID_lonia6      [laduj funkcje]^C^C(load "drogi.lsp") 
+
+***TOOLBARS
+
+//
+//      Koniec pliku menu AutoCAD - D:\Zdzich Plotek\DROGI.APL\DROGI.mnc
+//
+
