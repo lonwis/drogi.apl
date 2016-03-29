@@ -1,0 +1,268 @@
+<?xml version="1.0"?>
+<!--
+Ostrzeżenie! Nie należy edytować elementów tego pliku.
+Przy próbie edycji tego pliku w edytorze XML, można utracić dostosowanie i dane migracji.
+Jeżeli należy zmienić informacje w pliku dostosowywania, należy użyć okna dialogowego Dostosuj interfejs użytkownika w programie.
+Okno Dostosuj interfejs użytkownika jest dostępne z menu Narzędzia > Dostosowywanie > Interfejs, lub po wywołaniu polecenia CUI w wierszu polecenia. 
+-->
+<CustSection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FileVersion MajorVersion="0" MinorVersion="4" IncrementalVersion="1" UserVersion="1" />
+  <Header>
+    <CommonConfiguration>
+      <CommonItems>
+        <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+      </CommonItems>
+    </CommonConfiguration>
+    <WorkspaceRoot>
+      <WorkspaceConfigRoot />
+    </WorkspaceRoot>
+  </Header>
+  <MenuGroup Name="DROGI_LONIA">
+    <MacroGroup Name="drogi_loniaMacros">
+      <MenuMacro UID="ID_lonia1">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0002">wpisywanie rzednych niwelety RZ</Name>
+          <Command>^c^c(if (equal droga_pocz nil)	(load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz)	) rz p </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_lonia14">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0004">punkt niwelety</Name>
+          <Command>^c^c(if (equal droga_pocz nil)	(load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz)	) rz_punkt </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_lonia13">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0006">luki nivelety</Name>
+          <Command>^c^c(if (equal droga_pocz nil)	(load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz)	) nluki </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_lonia11">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0008">spadek: 2 punkty</Name>
+          <Command>^c^c(if (equal droga_pocz nil)	(load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz)	) spadek_punkty </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_lonia12">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0010">spadek: odcinek</Name>
+          <Command>^c^c(if (equal droga_pocz nil)	(load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz)	) spadek_linii </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_lonia2">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0012">wpisywanie rzednych przekroju poprz RZ</Name>
+          <Command>^c^c(if (equal droga_pocz nil)(load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz)) rz_p  </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_lonia5">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0014">wstaw blok PROFIL poprzeczny</Name>
+          <Command>^c^c(if (equal droga_pocz nil)(load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz)) wstaw_profil </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_lonia9">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0016">pomiary przekroju poprzecznego</Name>
+          <Command>^c^c(if (equal droga_pocz nil)(load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz)) przekroj_bp              </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_lonia7">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0018">pole obiektow</Name>
+          <Command>^c^c(if (equal droga_pocz nil)(load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz)) lo_pole </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_lonia8">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0020">dlug obiektow</Name>
+          <Command>^c^c(if (equal droga_pocz nil)(load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz)) lo_dlugosc </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_lonia3">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0022">inicjlizacja PP i wys i skal</Name>
+          <Command>^c^c(if (equal droga_pocz nil) 	(load "drogi.lsp")) (droga_pocz) </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_lonia31">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0024">podaj PP</Name>
+          <Command>^c^c(if (equal droga_pocz nil) 	(load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz)	) !punkt_bazowy !wys_pp !x_pp !skala_poziom !skala_pion </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_lonia32">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0026">przenies LUW do  PP</Name>
+          <Command>^c^c(if (equal droga_pocz nil) 	(load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz)	) (command "_ucs" "_o" punkt_bazowy )  </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_lonia6">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0028">laduj funkcje</Name>
+          <Command>^c^c(load "drogi.lsp") </Command>
+        </Macro>
+      </MenuMacro>
+    </MacroGroup>
+    <MenuRoot>
+      <AcceleratorRoot />
+      <OverrideRoot />
+      <MouseButtonRoot />
+      <DigitizerButtonRoot />
+      <PopMenuRoot>
+        <PopMenu hasDiesel="false" UID="PMU_0002">
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Alias>POP1</Alias>
+          <Name xlate="true" UID="XLS_0001">&amp;Drogi</Name>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0001">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_0003" xlate="true">wpisywanie rzednych niwelety RZ</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_lonia1" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0002">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_0005" xlate="true">punkt niwelety</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_lonia14" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0003">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_0007" xlate="true">luki nivelety</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_lonia13" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0004">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0005">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_0009" xlate="true">spadek: 2 punkty</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_lonia11" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0006">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_0011" xlate="true">spadek: odcinek</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_lonia12" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0007">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0008">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_0013" xlate="true">wpisywanie rzednych przekroju poprz RZ</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_lonia2" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0009">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_0015" xlate="true">wstaw blok PROFIL poprzeczny</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_lonia5" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0010">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_0017" xlate="true">pomiary przekroju poprzecznego</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_lonia9" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0011">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_0019" xlate="true">pole obiektow</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_lonia7" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0012">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_0021" xlate="true">dlug obiektow</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_lonia8" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0013">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0014">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_0023" xlate="true">inicjlizacja PP i wys i skal</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_lonia3" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0015">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_0025" xlate="true">podaj PP</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_lonia31" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0016">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_0027" xlate="true">przenies LUW do  PP</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_lonia32" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0017">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0018">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_0029" xlate="true">laduj funkcje</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_lonia6" />
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+      </PopMenuRoot>
+      <ToolbarRoot />
+      <ScreenMenuRoot />
+      <ImageMenuRoot />
+      <TabletMenuRoot />
+      <DoubleClickRoot />
+      <ToolPanelRoot />
+      <PanelSetRoot>
+        <PanelSet UID="PSTU_0001" />
+      </PanelSetRoot>
+    </MenuRoot>
+  </MenuGroup>
+</CustSection>
