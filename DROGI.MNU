@@ -1,0 +1,46 @@
+
+//  menu droga z narzdziami do przekrojow 
+//  Leonard Wisniewski 08.12.98
+// instalacja: narzedzia , adaptacja menu, 
+// 	drogi_onia usun
+//	przegladaj - wybrac drogi.mnu
+//	wczytaj
+//	na pasek menu : wstaw z grupy drogi
+***MENUGROUP=drogi_lonia
+
+***POP1
+   [&Drogi]
+ID_lonia1    [wpisywanie rzednych niwelety RZ]^c^c(if (equal droga_pocz nil)+
+	(load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz)+
+	) rz p
+ID_lonia14    [punkt niwelety]^c^c(if (equal droga_pocz nil)+
+	(load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz)+
+	) rz_punkt
+ID_lonia13   [luki nivelety]^c^c(if (equal droga_pocz nil)+
+	(load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz)+
+	) nluki
+          [--]
+ID_lonia11   [spadek: 2 punkty]^c^c(if (equal droga_pocz nil)+
+	(load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz)+
+	) spadek_punkty
+ID_lonia12   [spadek: odcinek]^c^c(if (equal droga_pocz nil)+
+	(load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz)+
+	) spadek_linii
+          [--]
+ID_lonia2    [wpisywanie rzednych przekroju poprz RZ]^c^c(if (equal droga_pocz nil)(load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz)) rz_p 
+ID_lonia5    [wstaw blok PROFIL poprzeczny]^c^c(if (equal droga_pocz nil)(load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz)) wstaw_profil
+ID_lonia9    [pomiary przekroju poprzecznego]^c^c(if (equal droga_pocz nil)(load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz)) przekroj_bp             
+ID_lonia7    [pole obiektow]^c^c(if (equal droga_pocz nil)(load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz)) lo_pole
+ID_lonia8    [dlug obiektow]^c^c(if (equal droga_pocz nil)(load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz)) lo_dlugosc
+          [--]  
+ID_lonia3    [inicjlizacja PP i wys i skal]^c^c(if (equal droga_pocz nil) +
+	(load "drogi.lsp")) (droga_pocz)
+ID_lonia31    [podaj PP]^c^c(if (equal droga_pocz nil) +
+	(load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz)+
+	) !punkt_bazowy !wys_pp !x_pp !skala_poziom !skala_pion
+ID_lonia32    [przenies LUW do  PP]^c^c(if (equal droga_pocz nil) +
+	(load "drogi.lsp")) (if (equal skala_pion nil)(droga_pocz)+
+	) (command "_ucs" "_o" punkt_bazowy ) 
+          [--]
+ID_lonia6    [laduj funkcje]^c^c(load "drogi.lsp")
+

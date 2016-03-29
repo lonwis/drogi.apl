@@ -1,0 +1,28 @@
+//
+//      AutoCAD plik menu - E:\drogi.apl\guziki.mnu
+//
+
+***MENUGROUP=E:\drogi.apl\guziki.mnu
+
+***AUX1
+;
+^C^C
+
+***AUX2
+$P0=* 
+line 
+
+***AUX3
+;
+$P0=* 
+
+***AUX4
+;
+$P0=* 
+
+***TOOLBARS
+
+//
+//      Koniec pliku menu AutoCAD - E:\drogi.apl\guziki.mnu
+//
+

@@ -1,0 +1,24 @@
+     EXPLORATOR
+1.  utworzyc na dysku D katalog D:PRAC \ZDZICH pLOTEK\drogi.apl  
+2.  ma byc pusty, zawartosc przeniesc do katalogu C:\drogi.apl\bak
+3.  przeniesc PLIKI z dyskietki do drogi.apl
+   
+
+         ACAD 
+4.  sprawdzic czy w acad MENU: Narzedzia|paramerty plik sciezka poszukiwan jes 
+	katalog jw (dodac)drogi.apl
+
+5.w MENU Narzedzia / Adaptacja menu  dodac menu z pliku C:\drogi.apl\drogi.mnu
+   
+przegladaj , znalezc ten plik i wczytac (w razie potrzeby)
+   
+przejsc do pasek menu i wstawic
+
+
+
+6. za kazda instalacja skasowac w C:\drogi.apl pliki
+	drogi.mnc
+	drogi.mnr
+	drogi.mns
+	(NIE KASOWAC PLIKU   drogi.mnu   !!!!!!!!!!)
+

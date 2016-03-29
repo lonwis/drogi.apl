@@ -1,0 +1,20 @@
+***AUX1
+[guzik 1 enter];
+[guzik 2 cancel]^c^c
+
+//  SHIFT
+***AUX2
+[guzik 1 enter]$P0=*
+[guzik 2 tryby wskazywania]line
+
+//  CTRL
+***AUX3
+[guzik 1 enter];
+[guzik 2 ]$P0=*
+
+//  SHIFT+CTRL
+***AUX4
+[guzik 1 enter];
+[guzik 2 ]$P0=*
+
+
