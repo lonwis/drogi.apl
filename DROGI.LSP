@@ -1,5 +1,8 @@
 (vmon);; virtual memory pager 
 
+
+;; zmiana qq
+
 ;; 5.12.98. Lonia Wisniewski
 ;; zbior funkcji do projektowania drog
 ;; zmienne globalne :
