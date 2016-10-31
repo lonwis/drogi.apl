@@ -2,6 +2,8 @@
 
 
 ;; zmiana qq
+;;zmiana fun3
+
 
 ;; 5.12.98. Lonia Wisniewski
 ;; zbior funkcji do projektowania drog
